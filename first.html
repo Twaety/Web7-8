@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>TO DO LIST</h1>
+    </header>
+    <main>
+        <div class = "block_column">
+            <h2>Title</h2>
+            <div class = "block_row">
+                <input type="text" id = "title_input">
+                <button id = "plus_button">+</button>
+            </div>
+        </div>
+        <div class = "block_row block_filters">
+            <button class = "filter_button" id = "all_button">All</button>
+            <button class = "filter_button" id = "done_button">Done</button>
+            <button class = "filter_button" id = "notDone_button">Not Done</button>
+        </div>
+        <div id = "block_tasks">
+            <div class = "block_row block_task">
+                <p>TASK</p>
+                <button id = "edit_button" class = "task_button"><img class = "task_img" src="Images/pensil_edit.jpeg" alt="pensil"></button>
+                <button id = "musorka_button" class = "task_button"><img class = "task_img" src="Images/musorka_img.png" alt=""></button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Костин Михаил, 2252</p>
+        <p>
+            <a href="https://uni-dubna.ru/"><img src = "Images/Uni.jpg" alt = "University" class = "footer_img" id = "img_uni"></a>
+            <a href="https://vk.com/twaety"><img src = "Images/VK.png" alt = "VK" class = "footer_img"></a>
+            <a href="https://t.me/Twaety9017"><img src = "Images/Telegram.png" alt = "Telegram" class = "footer_img"></a>
+        </p>
+        <p>Университет Дубна, 2025</p>
+    </footer>
+</body>
+</html>
