@@ -15,9 +15,8 @@ h2
     font-weight: 530;
 }
 
-p 
-{
-    font-size: 24px;
+html, body {
+    height: 100%;
 }
 
 body 
@@ -25,7 +24,6 @@ body
     background-color: rgb(173, 254, 255);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 header 
@@ -39,6 +37,7 @@ main
 {
     width: 90%;
     margin: 20px auto;
+    flex: 1 0 auto;
 }
 
 footer 
@@ -86,9 +85,10 @@ footer p
 
 .filter_button
 {
-    width: 7%;
+    width: 100px;
     font-size: 16px;
-    border-radius: 10px;
+    border-radius: 15px;
+    padding: 5px 10px;
 }
 
 .filter_button_on
@@ -120,6 +120,34 @@ footer p
     margin: 15px 0 15px 20px;
 }
 
+.task_input 
+{
+    border: none;
+    background: transparent;
+    font-size: 24px;
+    width: 300px;
+    padding: 5px;
+    outline: none;
+}
+
+.task_input:read-only 
+{
+    cursor: default;
+}
+
+.task_input:not(:read-only) 
+{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: white;
+}
+
+.completed .task_input 
+{
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
 .task_button 
 {
     width: 40px;
@@ -127,6 +155,7 @@ footer p
     border: none;
     border-radius: 20px;
     background: white;
+    cursor: pointer;
 }
 
 .task_img
