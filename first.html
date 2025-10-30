@@ -10,24 +10,33 @@
     <header>
         <h1>TO DO LIST</h1>
     </header>
-    <main>
+    <main class = "block_column">
         <div class = "block_column">
-            <h2>Title</h2>
+            <h2>Task</h2>
             <div class = "block_row">
                 <input type="text" id = "title_input">
                 <button id = "plus_button">+</button>
             </div>
         </div>
         <div class = "block_row block_filters">
-            <button class = "filter_button" id = "all_button">All</button>
-            <button class = "filter_button" id = "done_button">Done</button>
-            <button class = "filter_button" id = "notDone_button">Not Done</button>
+            <button class = "filter_button filter_button_off" id = "all_button">All</button>
+            <button class = "filter_button filter_button_on" id = "done_button">Done</button>
+            <button class = "filter_button filter_button_on" id = "notDone_button">Not Done</button>
         </div>
         <div id = "block_tasks">
             <div class = "block_row block_task">
                 <p>TASK</p>
-                <button id = "edit_button" class = "task_button"><img class = "task_img" src="Images/pensil_edit.jpeg" alt="pensil"></button>
-                <button id = "musorka_button" class = "task_button"><img class = "task_img" src="Images/musorka_img.png" alt=""></button>
+                <div class = "block_task_buttons">
+                    <button id = "edit_button" class = "task_button"><img class = "task_img" src="Images/pensil_edit.jpeg" alt="pensil"></button>
+                    <button id = "musorka_button" class = "task_button"><img class = "task_img" src="Images/musorka_img.png" alt=""></button>
+                </div>
+            </div>
+            <div class = "block_row block_task">
+                <p>TASK</p>
+                <div class = "block_task_buttons">
+                    <button id = "edit_button" class = "task_button"><img class = "task_img" src="Images/pensil_edit.jpeg" alt="pensil"></button>
+                    <button id = "musorka_button" class = "task_button"><img class = "task_img" src="Images/musorka_img.png" alt=""></button>
+                </div>
             </div>
         </div>
     </main>
